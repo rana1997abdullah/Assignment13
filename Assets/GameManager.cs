@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+     Player player1 = new Player();
+     Player player2 = new Player();
     // Start is called before the first frame update
     void Start()
     {
-        Player player1 = new Player();
-        Player player2 = new Player();
+   
         player1.InitializePlayer("Rana",70);
         player2.InitializePlayer("Hussam",100);
         player1.Heal(20);
